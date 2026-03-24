@@ -1,4 +1,4 @@
-# 🚀 Peax OS
+# 💻⚙️ Peax OS
 
 A versatile C++ CLI application developed on **Arch Linux**. This tool is designed to provide quick utilities directly from the terminal.
 
