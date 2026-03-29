@@ -6,7 +6,6 @@ int main ()
 while (true) 
 {
 
-    system("clear");
     cout<<" "<<endl;
     cout<<R"( ____                      _    _       _                  _        ___  
 |  _ \ ___  __ ___  __    / \  | |_ __ | |__   __ _       / |      / _ \
@@ -341,34 +340,41 @@ while (true)
         {
             cout<<"There is no excellent phone at this price"<<endl;
         }
-        else if (focus!="cam" || focus!="Cam" || focus!="CAM" || focus!="per" || focus!="Per" || focus!="PER" || focus!="UI" || focus!="ui" || focus!="Ui" || focus!="uI" || focus!="All" || focus!="all" || focus!="ALL")
+        else if (focus!="cam" && focus!="Cam" && focus!="CAM" && focus!="per" && focus!="Per" && focus!="PER" && focus!="UI" && focus!="ui" && focus!="Ui" && focus!="uI" && focus!="All" && focus!="all" && focus!="ALL")
         {
             cout<<"Invalid Choice !"<<endl;
         }
         cout<<" "<<endl;
         cout<<"============================================"<<endl;
         cout<<" "<<endl;
+        break;
     }
-    case 7:
+   case 7:
     {
-        break;
-        break;
+        cout << "Exiting PeaX OS... Goodbye!" << endl;
+        return 0; 
     }
+    
     default:
     {
-        cout<<"Invalid Choice !"<<endl;
-    }
-    string ex;
-    cout<<"Do You want To Exit ?: (y/n): ";
-    cin>>ex;
-    if (ex=="y" || ex=="Y")
-    {
+        cout << "Invalid Choice!" << endl;
         break;
     }
-
     }
-    cout<<"Developed on Arch Linux (Kernel 6.19)" << endl;
-    cout<<"PC: HP 250 G1 | CPU: Core i3-2348M" << endl;
-}
+
+    string ex;
+    cout << "Do You want To Exit? (y/n): ";
+    cin >> ex;
+    
+    if (ex == "y" || ex == "Y") 
+    {
+        break; 
+    }
+
+    cout << "\nDeveloped on Arch Linux (Kernel 6.19)" << endl;
+    cout << "PC: HP 250 G1 | CPU: Core i3-2348M" << endl;
+    cout << "==============================================\n" << endl;
+
+} 
     return 0;
 }
